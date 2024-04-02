@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eaeff1;
+  overflow-y: hidden;
+  display:flex;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #d1dde5;
+  height: 590px;
+  max-width: 400px;
+  border-radius: 16px;
+  margin: 40px auto;
+  
+}
+.image {
+  padding: 7px 5px;
+}
+
+.image img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.tags {
+  padding: 6px 5px 5px 20px;
+}
+
+.tags span {
+  display: inline-block;
+  border: 1px solid #d1dde5;
+  padding: 5px 10px;
+  border-radius: 16px;
+  margin-left: 8px;
+  font-weight: 526;
+  font-family: sans-serif;
+  color: #8b98a6;
+}
+
+.info {
+  font-family: "Poppins", sans-serif;
+  padding: 14px 8px;
+}
+
+h2 {
+  margin: 3px;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+.info p {
+  font-size: 16px;
+  color: grey;
+}
+
+.button button {
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 35%;
+    margin-top: auto;
+    background-color: #E0EFFF;
+    color:  #0e96ea;
+    border: none;
+    border-radius: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button button:hover{
+  border: 1px solid blanchedalmond;
+  background-color: rgb(153, 230, 241);
+}
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for tablets and smaller screens */
+  .card {
+    max-width: 90%; /* Adjust card width to fit smaller screens */
+    margin: 40px auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjustments for smartphones and smaller screens */
+  .card {
+    border-radius: 7px; 
+    border: none; /* Remove border for smaller screens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    padding: 20px; /* Add more padding for better spacing */
+  }
+
+  .button{
+    margin-top: 2px;
+  }
+}
